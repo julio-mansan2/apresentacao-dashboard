@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main";
+    grid-template-columns: 1fr;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.header {
+    grid-area: 'header';
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+}
+
+.header-menu {
+    display: flex;
+    gap: 3.75rem;
+    align-items: center;
+}
+
+.header-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header-menu ul a {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.header-menu a:hover {
+    text-decoration: underline;
+}
+
+.header-menu .login {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.header-menu .círculo {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: var(--grayish-blue);
+    border-radius: 50%;
+}
+
+.header-menu .login {
+    color: var(--grayish-blue);
+    font-weight: 700;
+}
+
+.main {
+    grid-area: 'main';
+    display: flex;
+    padding: 5% 10% 10% 10%;
+    align-items: center;
+    position: relative;
+}
+
+.main .img-mobile {
+    display: none;
+}
+
+.main .img-desktop {
+    position: absolute;
+    width: 43.75rem;
+    height: 21.8rem;
+    right: 0;
+    top: 10%;
+}
+
+.monograph-dashobard {
+    font-family: 'Barlow', sans-serif;
+    color: var(--grayish-blue);
+    margin-bottom: 1.25rem;
+}
+
+.monograph-dashobard .new {
+    padding: 0.3rem 0.4rem;
+    background-color: var(--very-dark-blue);
+    border-radius: 20px;
+    color: var(--light-grayish-blue);
+    font-weight: 700;
+}
+
+.main h1 {
+    font-size: 3.3rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--very-dark-blue);
+    margin-bottom: 1.8rem;
+}
+
+.main .intro {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 3.1rem;
+}
+
+.demo button {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: var(--red);
+    text-transform: uppercase;
+    color: var(--light-grayish-blue);
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-right: 1.25rem;
+}
+
+.demo button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.demo span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+    color: var(--dark-grayish-blue);
+}
+
+input {
+    display: none;
+}
